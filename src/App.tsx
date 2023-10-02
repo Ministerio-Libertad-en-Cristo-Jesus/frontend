@@ -6,10 +6,12 @@ import Prayers from './pages/prayers/Prayers'
 import Offering from './pages/offering/Offering'
 import Preachings from './pages/preachings/Preachings'
 import Contact from './pages/contact/Contact'
+import Sidepanel from './layouts/sidepanel/Sidepanel'
 
 function App () {
   return (
     <>
+    <Sidepanel />
     <Navbar />
     <Routes>
       <Route path='/' element={<Home />}/>

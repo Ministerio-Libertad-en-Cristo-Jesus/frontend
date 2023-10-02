@@ -8,3 +8,11 @@ export interface listProps {
   listStyle: string
   itemStyle: string
 }
+
+export interface ButtonSidepanelProps extends itemList {
+  svg: JSX.Element
+}
+
+export interface ButtonsSidepanelProps {
+  buttons: ButtonSidepanelProps[]
+}

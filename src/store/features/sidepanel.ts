@@ -1,13 +1,15 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-const initialState = false
+const initialState = {
+  open: false
+}
 
 export const sidePanelSlice = createSlice({
   name: 'sidePanel',
   initialState,
   reducers: {
     OpenCloseSidePanel: (state) => {
-      state ? state = false : state = true
+      state.open ? state.open = false : state.open = true
     }
   }
 })
