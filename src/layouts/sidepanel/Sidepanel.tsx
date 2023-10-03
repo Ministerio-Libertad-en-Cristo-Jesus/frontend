@@ -9,7 +9,7 @@ const Sidepanel = () => {
   const dispatch = useAppDispatch()
 
   return (
-    <div className={`flex flex-row-reverse fixed z-50 backdrop-blur-sm ${openClose ? 'opacity-100 visible' : 'opacity-0 invisible'} transition-all ease-in-out duration-300 bg-black/20 w-full h-screen`}>
+    <div className={`flex flex-row-reverse fixed top-0 z-50 backdrop-blur-sm ${openClose ? 'opacity-100 visible' : 'opacity-0 invisible'} transition-all ease-in-out duration-300 bg-black/20 w-full h-screen`}>
       <div className={`bg-whiteI h-screen w-2/6 ${openClose ? 'translate-x-0' : 'translate-x-[100%]'} transition-all ease-in-out duration-500 min-w-[384px] max-w-sm`}>
 
         <HeaderSidePanel />

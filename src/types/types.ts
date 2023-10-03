@@ -16,3 +16,10 @@ export interface ButtonSidepanelProps extends itemList {
 export interface ButtonsSidepanelProps {
   buttons: ButtonSidepanelProps[]
 }
+
+export interface Preach {
+  title: string
+  id: number
+  content: string
+  image: string
+}
