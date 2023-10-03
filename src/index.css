@@ -2,3 +2,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.swiper-pagination-bullet {
+  background-color: white;
+  width: 18px;
+  height: 18px;
+}
+
+.swiper-pagination{
+  margin-bottom: 16px;
+}
+
+
+:root {
+  --swiper-navigation-size: 28px;
+  --swiper-theme-color: #e5e5e5;
+}

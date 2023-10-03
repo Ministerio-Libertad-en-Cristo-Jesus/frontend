@@ -1,9 +1,9 @@
-import Slide from './Slide'
+import Carrousel from './Carrousel'
 
 const Home = () => {
   return (
     <div className='flex justify-center mt-20'>
-      <Slide />
+      <Carrousel />
     </div>
   )
 }
