@@ -17,9 +17,23 @@ export interface ButtonsSidepanelProps {
   buttons: ButtonSidepanelProps[]
 }
 
+export interface DateModel {
+  day: number
+  month: number
+  year: number
+}
+
 export interface Preach {
   title: string
   id: number
   content: string
   image: string
+  pastor: string
+  date: DateModel
+}
+
+export interface ButtonType {
+  text: string
+  dark: boolean
+  onClick: () => void
 }

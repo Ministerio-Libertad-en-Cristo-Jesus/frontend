@@ -1,4 +1,4 @@
-import { type Preach } from '../../types/types'
+import { type Preach } from '../../../types/types'
 
 const Slide = ({ title, content, image }: Preach) => {
   return (

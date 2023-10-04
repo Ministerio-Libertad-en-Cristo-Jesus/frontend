@@ -1,9 +1,11 @@
-import Carrousel from './Carrousel'
+import PreachSection from './PreachsSection/PreachSection'
+import Carrousel from './carrouselSection/Carrousel'
 
 const Home = () => {
   return (
-    <div className='flex justify-center mt-20'>
+    <div className='flex flex-wrap justify-center mt-20'>
       <Carrousel />
+      <PreachSection />
     </div>
   )
 }
