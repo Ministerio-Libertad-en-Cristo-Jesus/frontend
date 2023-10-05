@@ -32,6 +32,10 @@ export interface Preach {
   date: DateModel
 }
 
+export interface Preaches {
+  preaches: Preach[]
+}
+
 export interface ButtonType {
   text: string
   dark: boolean

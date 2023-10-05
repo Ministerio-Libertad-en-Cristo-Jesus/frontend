@@ -39,5 +39,17 @@ export const preachings: Preach[] = [
       month: 9,
       year: 2023
     }
+  },
+  {
+    title: 'La Prosperidad que llega a tu vida',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas venenatis metus ipsum, at tempus nisl convallis quis. Nam fringilla rhoncus nunc, non bibendum ipsum imperdiet vel. Mauris interdum ut lorem in iaculis. Ut convallis elit eu mauris rutrum laoreet. Sed hendrerit egestas velit id mattis. Ut et rhoncus lectus. Praesent at dolor at dui bibendum luctus eget sit amet purus. Fusce tempus magna non risus efficitur, ac pulvinar orci ornare. Sed elit tellus, volutpat non dictum nec, feugiat at lorem. Etiam pellentesque aliquet nisi eget mollis. Sed quis est nunc.',
+    id: 4,
+    image: imagePreach3,
+    pastor: 'Jose Petit',
+    date: {
+      day: 10,
+      month: 9,
+      year: 2023
+    }
   }
 ]
