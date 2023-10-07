@@ -4,7 +4,7 @@ import { dateSeter } from '../../../utils/dateSeter'
 
 const PrincipalPreach = ({ title, pastor, date, content, image }: Preach) => {
   return (
-    <div className='flex flex-wrap lg:flex-nowrap items-center m-10 lg:m-24'>
+    <div className='flex flex-wrap w-full lg:flex-nowrap items-center p-10 lg:p-24 max-w-[1440px]'>
 
       <img
       className=' lg:w-[420px] h-[370px] lg:h-[420px] mr-12 object-cover rounded-xl'

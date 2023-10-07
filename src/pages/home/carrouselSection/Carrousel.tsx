@@ -16,7 +16,7 @@ const Carrousel = () => {
       spaceBetween={0}
       slidesPerView={1}
       navigation
-      className='flex max-w-[1440px]'
+      className='flex w-[100%] max-w-[1440px]'
       pagination={{ clickable: true }}>
 
       {preachings.map(preaching => (

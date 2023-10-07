@@ -3,9 +3,9 @@ import { dateSeter } from '../../../utils/dateSeter'
 
 const Card = ({ title, pastor, content, date, image }: Preach) => {
   return (
-    <div className='w-60 min-w-60 lg:min-w-80 lg:w-80 hover:bg-[#e1e1e1] rounded-t-xl rounded-b-xl hover:shadow-xl hover:cursor-pointer transition-all duration-200'>
+    <div className='w-60 min-w-[15rem] lg:min-w-[20rem] lg:w-80 hover:bg-[#e1e1e1] rounded-t-xl rounded-b-xl hover:shadow-md lg:hover:shadow-xl hover:cursor-pointer transition-all duration-200'>
       <img
-      className=' w-60 min-w-60 lg:min-w-80 lg:w-80 rounded-t-xl h-36 lg:h-44 object-cover'
+      className=' w-60 min-w-[15rem] lg:min-w-[20rem] lg:w-80 rounded-t-xl h-36 lg:h-44 object-cover'
       src={image}
       alt={title} />
       <div className='m-2 lg:m-5'>

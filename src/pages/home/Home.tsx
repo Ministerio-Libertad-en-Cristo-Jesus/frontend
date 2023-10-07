@@ -4,7 +4,7 @@ import OfferingSection from './offeringSection/OfferingSection'
 
 const Home = () => {
   return (
-    <div className='flex flex-wrap justify-center mt-20'>
+    <div className='flex flex-col items-center justify-center mt-20'>
       <Carrousel />
       <PreachSection />
       <OfferingSection />

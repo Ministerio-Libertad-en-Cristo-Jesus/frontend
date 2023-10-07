@@ -10,7 +10,7 @@ const OfferingSection = () => {
           <div className='mt-6'>
             <h4 className='font-noto font-black text-whiteI text-xl lg:text-3xl'>DIOS AMA AL DADOR ALEGRE</h4>
             <p className='font-noto font-medium text-whiteI text-base lg:text-lg mt-2'>2 Corintios 9:7</p>
-            <p className='font-noto font-light max-w-[600px] text-whiteI text-sm lg:text-base mt-1'>Cada uno dé como propuso en su corazón: no con tristeza, ni por necesidad, porque Dios ama al dador alegre.</p>
+            <p className='font-noto font-light max-w-[600px] mr-0 lg:mr-4 text-whiteI text-sm lg:text-base mt-1'>Cada uno dé como propuso en su corazón: no con tristeza, ni por necesidad, porque Dios ama al dador alegre.</p>
           </div>
 
           <div className='mt-8 mb-12 lg:mt-6 lg:mb-6'>
