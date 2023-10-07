@@ -3,7 +3,7 @@ import Button from '../../../components/Button'
 
 const OfferingSection = () => {
   return (
-    <div className="flex justify-center w-full mb-14 bg-blueI">
+    <div className="flex justify-center w-full mb-10 lg:mb-24 bg-blueI">
       <div className='flex flex-col-reverse lg:flex-row justify-between items-center px-10 lg:px-24 max-w-[1440px]'>
         <div className='flex flex-col items-center'>
 

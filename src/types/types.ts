@@ -41,3 +41,10 @@ export interface ButtonType {
   dark: boolean
   onClick: () => void
 }
+
+export interface CardImageType {
+  row: string
+  title: string
+  image: string
+  link: string
+}

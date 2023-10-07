@@ -1,6 +1,7 @@
 import PreachSection from './PreachsSection/PreachSection'
 import Carrousel from './carrouselSection/Carrousel'
 import OfferingSection from './offeringSection/OfferingSection'
+import PagesSection from './pagesSection/PagesSection'
 
 const Home = () => {
   return (
@@ -8,6 +9,7 @@ const Home = () => {
       <Carrousel />
       <PreachSection />
       <OfferingSection />
+      <PagesSection />
     </div>
   )
 }
