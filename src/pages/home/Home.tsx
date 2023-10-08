@@ -1,5 +1,6 @@
 import PreachSection from './PreachsSection/PreachSection'
 import Carrousel from './carrouselSection/Carrousel'
+import MapSection from './mapsSection/MapSection'
 import OfferingSection from './offeringSection/OfferingSection'
 import PagesSection from './pagesSection/PagesSection'
 
@@ -10,6 +11,7 @@ const Home = () => {
       <PreachSection />
       <OfferingSection />
       <PagesSection />
+      <MapSection />
     </div>
   )
 }

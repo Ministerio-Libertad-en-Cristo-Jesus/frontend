@@ -1,3 +1,5 @@
+import { type LatLngTuple } from 'leaflet'
+
 export interface itemList {
   rute: string
   name: string
@@ -47,4 +49,54 @@ export interface CardImageType {
   title: string
   image: string
   link: string
+}
+
+export interface MapType {
+  popup: string
+  position: LatLngTuple
+}
+
+export interface MapsNameType {
+  paricua: boolean
+  orlando: boolean
+}
+
+export interface MapCarrouselType {
+  whatSelected: MapsNameType
+}
+
+export interface SelectorMapType {
+  whatSelected: MapsNameType
+  changeMap: React.Dispatch<React.SetStateAction<{
+    paricua: boolean
+    orlando: boolean
+  }>>
+}
+
+export interface CheckMapType extends SelectorMapType {
+  isSelected: boolean
+  name: string
+  name2: string
+  title: string
+  direction: string
+}
+
+export interface MapSelectInfoType {
+  name: 'paricua' | 'orlando'
+  name2: 'paricua' | 'orlando'
+  title: string
+  direction: string
+}
+
+export interface MapSlideInfoType {
+  name: 'paricua' | 'orlando'
+  position: LatLngTuple
+  popup: string
+  stateSvg: JSX.Element
+  link: string
+}
+
+export interface MapSlideType extends MapSlideInfoType {
+  isSelected: boolean
+  rigth: boolean
 }
