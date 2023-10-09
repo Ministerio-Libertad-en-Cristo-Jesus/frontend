@@ -49,3 +49,15 @@ body{
   --swiper-navigation-size: 28px;
   --swiper-theme-color: #e5e5e5;
 }
+
+.social-media .swiper-button-prev {
+  color: #14213d;
+}
+
+.social-media .swiper-button-next {
+  color: #14213d;
+}
+
+.social-media .swiper-pagination .swiper-pagination-bullet {
+  background-color: #14213d;
+}

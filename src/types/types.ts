@@ -100,3 +100,11 @@ export interface MapSlideType extends MapSlideInfoType {
   isSelected: boolean
   rigth: boolean
 }
+
+export interface SocialMediaType {
+  name: string
+  link: string
+  logo: JSX.Element
+  description: string
+  buttonText: string
+}

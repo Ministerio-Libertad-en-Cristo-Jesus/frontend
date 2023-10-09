@@ -10,7 +10,7 @@ const MapSection = () => {
     orlando: true
   })
   return (
-    <div className='flex flex-col items-center w-full py-16 bg-blueI mb-56'>
+    <div className='flex flex-col items-center w-full py-16 bg-blueI mb-10 lg:mb-24'>
       <HeaderMapSection />
       <MapCarrousel whatSelected={MapActive}/>
       <SelectorMap whatSelected={MapActive} changeMap={setMapActive} />
