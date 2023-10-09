@@ -17,7 +17,7 @@ const SocialSlide = ({ logo, link, name, description, buttonText }: SocialMediaT
               {description}
             </p>
           </div>
-          <Button text={buttonText} dark={false} onClick={() => {}} />
+          <Button text={buttonText} dark={false} onClick={() => { window.open(link) }} />
         </div>
       </div>
 
