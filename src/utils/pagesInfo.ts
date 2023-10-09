@@ -23,3 +23,30 @@ export const pagesInfo: CardImageType[] = [
     link: '/contact'
   }
 ]
+
+export const urlPagesInfo = [
+  {
+    text: 'Inicio',
+    link: '/'
+  },
+  {
+    text: 'Sobre Nosotros',
+    link: '/aboutus'
+  },
+  {
+    text: 'Oraciones',
+    link: '/prayers'
+  },
+  {
+    text: 'Enseñanzas',
+    link: '/preachings'
+  },
+  {
+    text: 'Ofrendas',
+    link: '/offering'
+  },
+  {
+    text: 'Contacto',
+    link: '/contact'
+  }
+]

@@ -7,6 +7,7 @@ import Offering from './pages/offering/Offering'
 import Preachings from './pages/preachings/Preachings'
 import Contact from './pages/contact/Contact'
 import Sidepanel from './layouts/sidepanel/Sidepanel'
+import Footer from './layouts/footer/Footer'
 
 function App () {
   return (
@@ -21,6 +22,7 @@ function App () {
       <Route path='/offering' element={<Offering />}/>
       <Route path='/preachings' element={<Preachings />}/>
     </Routes>
+    <Footer />
     </>
   )
 }
