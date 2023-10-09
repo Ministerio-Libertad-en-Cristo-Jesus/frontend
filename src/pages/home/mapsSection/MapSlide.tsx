@@ -6,7 +6,7 @@ const MapSlide = ({ position, popup, link, stateSvg, rigth, isSelected }: MapSli
   const leftStyle = `${isSelected ? '-translate-x-0' : '-translate-x-full invisible'}`
   return (
     <div className={`flex flex-col w-full ${rigth ? leftStyle : rightStyle} items-center justify-center transition-all duration-300`}>
-      <div className='flex w-full px-10 lg:px-24 gap-24 justify-center'>
+      <div className='flex w-screen px-10 lg:px-24 gap-24 justify-center'>
         <Map position={position} popup={popup} />
         {stateSvg}
       </div>

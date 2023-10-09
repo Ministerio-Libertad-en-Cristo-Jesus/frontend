@@ -2,11 +2,11 @@ import LogoMin from '../../../assets/componentSVG/LogoMin'
 
 const HeaderMapSection = () => {
   return (
-    <header className='flex items-center mb-12 lg:mb-16'>
+    <header className='flex flex-col xl:flex-row items-center mb-12 lg:mb-16'>
       <LogoMin />
-      <div className='ml-12'>
-        <h2 className='font-noto text-whiteI font-black text-5xl'>Encuentranos</h2>
-        <p className='font-noto text-whiteI font-thin text-[2.65rem]'>En nuestras sedes</p>
+      <div className='mt-8 xl:mt-0 xl:ml-12'>
+        <h2 className='font-noto text-whiteI font-black text-3xl lg:text-5xl'>Encuentranos</h2>
+        <p className='font-noto text-whiteI font-thin text-[1.65rem] lg:text-[2.65rem]'>En nuestras sedes</p>
       </div>
     </header>
   )

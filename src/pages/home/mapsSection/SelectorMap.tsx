@@ -4,7 +4,7 @@ import { mapsToSelect } from '../../../utils/mapsInfo'
 
 const SelectorMap = ({ whatSelected, changeMap }: SelectorMapType) => {
   return (
-    <div className="flex justify-center gap-10 mt-16 w-full">
+    <div className="flex justify-center gap-6 lg:gap-10 mt-16 w-full">
       {
         mapsToSelect.map((map, index) => (
           <CheckMap
