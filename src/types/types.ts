@@ -1,4 +1,5 @@
 import { type LatLngTuple } from 'leaflet'
+import { type HTMLInputTypeAttribute } from 'react'
 
 export interface itemList {
   rute: string
@@ -114,4 +115,31 @@ export interface ButtonContactType {
   icon: JSX.Element
   green: boolean
   url: string
+}
+
+export interface InputType {
+  name: string
+  value: string
+  placeholder: string
+  error: boolean
+  errorMessage: string
+  onChange: React.ChangeEventHandler<HTMLInputElement>
+  type: HTMLInputTypeAttribute
+}
+
+export interface TextAreaType {
+  name: string
+  value: string
+  placeholder: string
+  error: boolean
+  errorMessage: string
+  onChange: React.ChangeEventHandler<HTMLTextAreaElement>
+}
+
+export interface FormMessageType {
+  from_name: string
+  user_name: string
+  user_email: string
+  user_phone: string
+  message: string
 }
