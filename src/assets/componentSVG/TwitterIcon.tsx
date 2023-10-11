@@ -1,6 +1,6 @@
 const TwitterIcon = () => {
   return (
-    <svg className="h-[25px] sm:h-[28px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.31 29.92">
+    <svg className="h-[25px] min-w-[25px] sm:h-[28px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.31 29.92">
       <defs>
         <style>
           {'.cls-6{fill:#e5e5e5;}'}

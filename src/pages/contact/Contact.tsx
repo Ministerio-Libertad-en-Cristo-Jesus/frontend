@@ -1,7 +1,17 @@
+import { useEffect } from 'react'
+import ArrowIcon from '../../assets/componentSVG/arrow'
+import Header from './Header'
+import BoxContact from './BoxContact'
+
 const Contact = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
-    <div>
-      <h1 className=' text-5xl text-yellow-950 font-black'>Iglesia App</h1>
+    <div className='w-full flex flex-col items-center'>
+      <Header />
+      <ArrowIcon />
+      <BoxContact />
     </div>
   )
 }

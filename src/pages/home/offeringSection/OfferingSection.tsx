@@ -1,7 +1,9 @@
+import { useNavigate } from 'react-router-dom'
 import offeringImg from '../../../assets/image/ofrenda.png'
 import Button from '../../../components/Button'
 
 const OfferingSection = () => {
+  const navigate = useNavigate()
   return (
     <div className="flex justify-center w-full mb-10 lg:mb-24 bg-blueI">
       <div className='flex flex-col-reverse lg:flex-row justify-between items-center px-10 lg:px-24 max-w-[1440px]'>
@@ -14,7 +16,7 @@ const OfferingSection = () => {
           </div>
 
           <div className='mt-8 mb-12 lg:mt-6 lg:mb-6'>
-            <Button text='Diezmos y Ofrendas' dark={true} onClick={() => {}} />
+            <Button text='Diezmos y Ofrendas' dark={true} onClick={() => { navigate('/offering') }} />
           </div>
 
         </div>

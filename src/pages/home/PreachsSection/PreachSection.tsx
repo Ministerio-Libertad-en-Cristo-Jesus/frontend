@@ -3,8 +3,10 @@ import PrincipalPreach from './PrincipalPreach'
 import { preachings } from '../../../utils/preachingInfo'
 import Cards from './Cards'
 import Button from '../../../components/Button'
+import { useNavigate } from 'react-router-dom'
 
 const PreachSection = () => {
+  const navigate = useNavigate()
   const firstPreach = preachings[0]
   const restPreachings = preachings.slice(1, 4)
   return (
@@ -14,7 +16,7 @@ const PreachSection = () => {
       <p className='font-noto font-normal text-blueI text-lg mt-1'>Nuestras últimas enseñanzas</p>
       <PrincipalPreach {...firstPreach} />
       <Cards preaches={restPreachings} />
-      <Button text='Ver más Prédicas' dark={false} onClick={() => {}} />
+      <Button text='Ver más Prédicas' dark={false} onClick={() => { navigate('/preachings') }} />
     </div>
   )
 }

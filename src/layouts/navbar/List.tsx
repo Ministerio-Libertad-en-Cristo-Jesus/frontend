@@ -1,5 +1,5 @@
-import { type listProps } from '../../types/types'
 import { Link } from 'react-router-dom'
+import { type listProps } from '../../types/types'
 
 const List = ({ items, listStyle, itemStyle }: listProps) => {
   return (

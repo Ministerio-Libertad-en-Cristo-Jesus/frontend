@@ -108,3 +108,10 @@ export interface SocialMediaType {
   description: string
   buttonText: string
 }
+
+export interface ButtonContactType {
+  text: string
+  icon: JSX.Element
+  green: boolean
+  url: string
+}
