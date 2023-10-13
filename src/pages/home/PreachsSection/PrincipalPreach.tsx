@@ -1,8 +1,10 @@
+import { useNavigate } from 'react-router-dom'
 import Button from '../../../components/Button'
 import { type Preach } from '../../../types/types'
 import { dateSeter } from '../../../utils/dateSeter'
 
-const PrincipalPreach = ({ title, pastor, date, content, image }: Preach) => {
+const PrincipalPreach = ({ title, pastor, date, content, image, id }: Preach) => {
+  const navigate = useNavigate()
   return (
     <div className='flex flex-wrap w-full lg:flex-nowrap items-center p-10 lg:p-24 max-w-[1440px]'>
 
@@ -17,10 +19,10 @@ const PrincipalPreach = ({ title, pastor, date, content, image }: Preach) => {
           <h2 className='font-noto font-black text-blueI text-2xl lg:text-4xl'>{title}</h2>
           <p className='font-noto font-bold mt-2 lg:mt-4 text-blueI text-lg lg:text-xl'>{`Pastor ${pastor}`}</p>
           <p className='font-noto font-medium mt-1 text-gray-800 text-xs lg:text-sm'>{dateSeter(date)}</p>
-          <p className='font-noto font-normal mb-8 line-clamp-4 text-blueI text-xs lg:text-lg max-w-[850px] mt-3 mr-10 lg:mr-0 lg:mt-5'>{content}</p>
+          <p className='font-noto font-normal mb-8 line-clamp-4 text-blueI text-xs lg:text-lg max-w-[850px] mt-3 mr-10 lg:mr-0 lg:mt-5'>{content[0]}</p>
         </div>
 
-        <Button text='Leer Prédica' dark={false} onClick={() => {}} />
+        <Button text='Leer Prédica' dark={false} onClick={() => { navigate(`/preachings/${id}`) }} />
 
       </div>
 

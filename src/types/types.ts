@@ -29,7 +29,7 @@ export interface DateModel {
 export interface Preach {
   title: string
   id: number
-  content: string
+  content: string[]
   image: string
   pastor: string
   date: DateModel

@@ -8,6 +8,8 @@ import Preachings from './pages/preachings/Preachings'
 import Contact from './pages/contact/Contact'
 import Sidepanel from './layouts/sidepanel/Sidepanel'
 import Footer from './layouts/footer/Footer'
+import CreatePreach from './pages/CreatePreach'
+import Preach from './pages/preach/Preach'
 
 function App () {
   return (
@@ -21,6 +23,8 @@ function App () {
       <Route path='/contact' element={<Contact />}/>
       <Route path='/offering' element={<Offering />}/>
       <Route path='/preachings' element={<Preachings />}/>
+      <Route path='/preachings/:id' element={<Preach />}/>
+      <Route path='/create-preach' element={<CreatePreach />}/>
     </Routes>
     <Footer />
     </>
