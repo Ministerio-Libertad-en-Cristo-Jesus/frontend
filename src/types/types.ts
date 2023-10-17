@@ -125,6 +125,8 @@ export interface InputType {
   errorMessage: string
   onChange: React.ChangeEventHandler<HTMLInputElement>
   type: HTMLInputTypeAttribute
+  min?: string
+  max?: string
 }
 
 export interface TextAreaType {
@@ -141,5 +143,17 @@ export interface FormMessageType {
   user_name: string
   user_email: string
   user_phone: string
+  message: string
+}
+
+export interface FormPrayerType {
+  from_name: string
+  user_name: string
+  user_email: string
+  country: string
+  gender: string
+  birthday: string
+  type: string
+  marital_status: string
   message: string
 }

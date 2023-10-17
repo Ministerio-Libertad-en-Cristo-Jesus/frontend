@@ -10,6 +10,7 @@ import 'swiper/css/scrollbar'
 import Slide from './Slide'
 
 const Carrousel = () => {
+  const preachs = preachings.slice(0, 3)
   return (
     <Swiper
       modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -19,7 +20,7 @@ const Carrousel = () => {
       className='flex w-[100%] max-w-[1440px]'
       pagination={{ clickable: true }}>
 
-      {preachings.map(preaching => (
+      {preachs.map(preaching => (
         <SwiperSlide key={preaching.id}>
           <Slide title={preaching.title} content={preaching.content} image={preaching.image} pastor={preaching.pastor} date={preaching.date} id={preaching.id} />
         </SwiperSlide>

@@ -6,6 +6,7 @@ import { useEffect } from 'react'
 import ContentPreach from './ContentPreach'
 import ButtonsPages from '../contact/ButtonsPages'
 import BottonInfo from './BottonInfo'
+import PreachNoExist from './PreachNoExist'
 
 const Preach = () => {
   const params = useParams()
@@ -19,13 +20,20 @@ const Preach = () => {
     window.scrollTo(0, 0)
   }, [location.pathname])
   return (
-    <div className="flex flex-col px-16 lg:px-52 items-center w-full mt-20">
-      <HeaderPreach headerImg={preachInfo1.image} />
-      <ArrowIcon />
-      <ContentPreach preachInfo1={preachInfo1} />
-      <ButtonsPages />
-      <div className='h-[96px]'></div>
-      <BottonInfo />
+    <div className="flex flex-col items-center w-full mt-20">
+      {
+        preachFind === undefined
+          ? <PreachNoExist />
+          : <div className='flex flex-col items-center px-10 lg:px-52 max-w-[1440px]'>
+              <HeaderPreach headerImg={preachInfo1.image} />
+              <ArrowIcon />
+              <ContentPreach preachInfo1={preachInfo1} />
+              <ButtonsPages />
+              <div className='h-[96px]'></div>
+              <BottonInfo />
+            </div>
+      }
+
     </div>
   )
 }

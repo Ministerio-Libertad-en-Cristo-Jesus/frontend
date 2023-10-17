@@ -27,7 +27,7 @@ const FormContact = () => {
   const [response, setResponse] = useState('')
   const [messageAl, setMessageAl] = useState('')
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target
     setMessageAl('')
     setResponse('')
@@ -54,13 +54,13 @@ const FormContact = () => {
       setLoading(true)
       setResponse('')
 
-      emailjs.send('service_7hyegsf', 'template_khj0ynl', {
+      emailjs.send('service_4n9dajf', 'template_u8xdkim', {
         ...form,
         user_name: form.user_name.trim(),
         user_email: form.user_email.trim(),
         user_phone: form.user_phone.trim(),
         message: form.message.trim()
-      }, 'kVa09E7jPyPe-GGdz')
+      }, 'X_NjgIH4yEWzWHeny')
         .then((result) => {
           setLoading(false)
           setResponse(result.text)
