@@ -17,7 +17,7 @@ export const list1: itemList[] = [
 
 export const list2: itemList[] = [
   {
-    rute: '/preachings',
+    rute: '/preachings/1',
     name: 'Enseñanzas'
   },
   {

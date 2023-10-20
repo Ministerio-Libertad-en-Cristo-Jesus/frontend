@@ -42,6 +42,7 @@ export interface Preaches {
 export interface ButtonType {
   text: string
   dark: boolean
+  disabled?: boolean
   onClick: () => void
 }
 

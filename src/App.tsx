@@ -10,6 +10,7 @@ import Sidepanel from './layouts/sidepanel/Sidepanel'
 import Footer from './layouts/footer/Footer'
 import CreatePreach from './pages/CreatePreach'
 import Preach from './pages/preach/Preach'
+import Middle from './pages/preachings/Middle'
 
 function App () {
   return (
@@ -22,8 +23,9 @@ function App () {
       <Route path='/prayers' element={<Prayers />}/>
       <Route path='/contact' element={<Contact />}/>
       <Route path='/offering' element={<Offering />}/>
-      <Route path='/preachings' element={<Preachings />}/>
-      <Route path='/preachings/:id' element={<Preach />}/>
+      <Route path='/preach/:id' element={<Preach />}/>
+      <Route path='/preachings' element={<Middle />}/>
+      <Route path='/preachings/:page' element={<Preachings />}/>
       <Route path='/create-preach' element={<CreatePreach />}/>
     </Routes>
     <Footer />

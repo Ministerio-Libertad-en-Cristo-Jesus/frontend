@@ -6,7 +6,7 @@ const CardSmall = ({ title, pastor, content, date, image, id }: Preach) => {
   const navigate = useNavigate()
   return (
     <div
-    onClick={() => { navigate(`/preachings/${id}`) }}
+    onClick={() => { navigate(`/preach/${id}`) }}
     className='w-60 min-w-[15rem] hover:bg-[#e1e1e1] rounded-t-xl rounded-b-xl hover:shadow-md hover:cursor-pointer transition-all duration-200'>
       <img
       className=' w-60 min-w-[15rem] rounded-t-xl h-36 object-cover'

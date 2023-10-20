@@ -39,7 +39,7 @@ export const urlPagesInfo = [
   },
   {
     text: 'Enseñanzas',
-    link: '/preachings'
+    link: '/preachings/1'
   },
   {
     text: 'Ofrendas',

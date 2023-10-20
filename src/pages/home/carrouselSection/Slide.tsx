@@ -11,7 +11,7 @@ const Slide = ({ title, content, image, id }: Preach) => {
       <div className='absolute left-10 bottom-8 lg:left-24 lg:bottom-16 '>
         <h2 className='font-noto font-black text-whiteI text-xl mr-10 lg:mr-0 lg:text-4xl'>{title}</h2>
         <p className='font-noto font-extralight line-clamp-4 text-whiteI text-xs lg:text-sm max-w-[850px] mt-1 mr-10 lg:mr-0 lg:mt-5'>{content}</p>
-        <p onClick={() => { navigate(`/preachings/${id}`) }} className='font-noto font-bold text-whiteI text-sm lg:text-base mt-2 mb-10 lg:mt-5 underline w-max hover:text-blue-700 hover:cursor-pointer transition-all duration-300'>Leer más</p>
+        <p onClick={() => { navigate(`/preach/${id}`) }} className='font-noto font-bold text-whiteI text-sm lg:text-base mt-2 mb-10 lg:mt-5 underline w-max hover:text-blue-700 hover:cursor-pointer transition-all duration-300'>Leer más</p>
       </div>
 
       <img

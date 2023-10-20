@@ -24,7 +24,7 @@ const Preach = () => {
       {
         preachFind === undefined
           ? <PreachNoExist />
-          : <div className='flex flex-col items-center px-10 lg:px-52 max-w-[1440px]'>
+          : <div className='flex flex-col w-full items-center px-10 lg:px-52 max-w-[1440px]'>
               <HeaderPreach headerImg={preachInfo1.image} />
               <ArrowIcon />
               <ContentPreach preachInfo1={preachInfo1} />
