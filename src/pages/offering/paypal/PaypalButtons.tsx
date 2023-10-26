@@ -9,6 +9,7 @@ const PaypalButtonsCont = (props: Props) => {
   return (
     <div className=' z-[1]'>
         <PayPalButtons
+        style={{ color: 'blue' }}
         createOrder={async (data, actions) => {
           return await actions.order.create({
             purchase_units: [
