@@ -32,6 +32,7 @@
 body{
   background-color: #e5e5e5;
   overflow-x: hidden;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 .swiper-pagination-bullet {

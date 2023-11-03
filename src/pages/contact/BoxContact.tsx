@@ -11,7 +11,6 @@ const BoxContact = () => {
         <h2 className='font-noto text-blueI text-center font-black mt-7 lg:mt-16 text-2xl sm:text-4xl'>Dejanos un mensaje</h2>
         <p className='font-noto text-blueI text-center font-light mb-7 lg:mb-16 text-lg sm:text-2xl'>¡Llena todos los campos!</p>
         <FormContact />
-
       </div>
     </div>
   )

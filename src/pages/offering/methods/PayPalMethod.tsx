@@ -57,7 +57,7 @@ const PayPalMethod = () => {
     }
   }
   const handleClick = () => {
-    if (Object.values(offeringPaypal).some(x => x === '')) {
+    if (offeringPaypal.amount === '' || description[1] === '') {
       setErrorMessage('Llena todos los campos*')
     } else if (Object.values(errors).some(x => x !== '')) {
       setErrorMessage('Verifica los errores*')
