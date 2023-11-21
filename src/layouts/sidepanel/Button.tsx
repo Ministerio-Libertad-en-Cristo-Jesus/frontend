@@ -9,7 +9,7 @@ const Button = ({ svg, rute, name }: ButtonSidepanelProps) => {
   return (
     <Link onClick={() => dispatch(OpenCloseSidePanel())} className='flex items-center py-4 pl-2 mx-5 rounded-md hover:bg-gray-300' to={rute}>
       {svg}
-      <p className='font-noto text-lg text-blueI ml-3'>{name}</p>
+      <p className='font-noto text-base sm:text-lg text-blueI ml-3'>{name}</p>
     </Link>
   )
 }

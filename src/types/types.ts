@@ -26,7 +26,7 @@ export interface DateModel {
   year: number
 }
 
-export interface Preach {
+export interface PreachType {
   title: string
   id: number
   content: string[]
@@ -36,7 +36,7 @@ export interface Preach {
 }
 
 export interface Preaches {
-  preaches: Preach[]
+  preaches: PreachType[]
 }
 
 export interface ButtonType {

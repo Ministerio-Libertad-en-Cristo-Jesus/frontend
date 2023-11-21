@@ -1,10 +1,11 @@
-import HeaderPreach from './HeaderPreach'
-import ArrowIcon from '../../assets/componentSVG/arrow'
+import { useEffect } from 'react'
 import { preachings } from '../../utils/preachingInfo'
 import { useParams, useLocation } from 'react-router-dom'
-import { useEffect } from 'react'
+import { type PreachType } from '../../types/types'
+import HeaderPreach from './HeaderPreach'
+import ArrowIcon from '../../assets/componentSVG/arrow'
 import ContentPreach from './ContentPreach'
-import ButtonsPages from '../contact/ButtonsPages'
+import ButtonsPages from '../../components/ButtonsPages'
 import BottonInfo from './BottonInfo'
 import PreachNoExist from './PreachNoExist'
 
@@ -13,9 +14,9 @@ const Preach = () => {
   const location = useLocation()
   const preachId = params.id !== undefined ? parseInt(params.id) : 0
   const preachFind = preachings.find(preach => preach.id === preachId)
-  let preachInfo1 = preachings[0]
+  let preachInfo1: PreachType
   // eslint-disable-next-line @typescript-eslint/no-unused-expressions
-  preachFind !== undefined ? preachInfo1 = preachFind : null
+  preachFind !== undefined ? preachInfo1 = preachFind : preachInfo1 = preachings[0]
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [location.pathname])
@@ -29,11 +30,10 @@ const Preach = () => {
               <ArrowIcon />
               <ContentPreach preachInfo1={preachInfo1} />
               <ButtonsPages />
-              <div className='h-[96px]'></div>
+              <div className='h-[45px] sm:h-[96px]'></div>
               <BottonInfo />
             </div>
       }
-
     </div>
   )
 }

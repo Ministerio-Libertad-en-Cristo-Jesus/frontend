@@ -7,7 +7,7 @@ const SocialMediaCarrousel = () => {
   return (
     <Swiper
       modules={[Navigation, Pagination, A11y]}
-      spaceBetween={100}
+      spaceBetween={20}
       slidesPerView={1}
       navigation
       className='flex px-10 lg:px-24 w-[100%] max-w-[1440px] social-media'

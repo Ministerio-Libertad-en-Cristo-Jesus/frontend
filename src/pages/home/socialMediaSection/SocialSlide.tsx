@@ -3,7 +3,7 @@ import { type SocialMediaType } from '../../../types/types'
 
 const SocialSlide = ({ logo, link, name, description, buttonText }: SocialMediaType) => {
   return (
-    <div className='flex flex-col items-center'>
+    <div className='flex flex-col items-center max-w-[1440px] p-24'>
       <div className='flex flex-col xl:flex-row items-center'>
 
         <a href={link} target='_blank' rel='noreferrer' className='flex justify-center w-full xl:w-auto bg-blueI px-14 py-20 lg:px-20 lg:py-32 mr-0 xl:mr-12 rounded-xl'>

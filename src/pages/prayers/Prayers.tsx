@@ -3,7 +3,7 @@ import ArrowIcon from '../../assets/componentSVG/arrow'
 import RightInfo from '../../layouts/RightInfo'
 import BoxPrayer from './BoxPrayer'
 import HeaderPrayer from './Header'
-import ButtonsPages from '../contact/ButtonsPages'
+import ButtonsPages from '../../components/ButtonsPages'
 
 const Prayers = () => {
   useEffect(() => {

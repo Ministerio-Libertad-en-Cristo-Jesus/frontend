@@ -10,7 +10,6 @@ const CheckOutPaypal = () => {
   useEffect(() => {
     window.scrollTo(0, 0)
     return () => {
-      console.log('me desmonto')
       dispatch(changeCheck({ descriptionCheck: '', amountCheck: '1' }))
     }
   }, [])

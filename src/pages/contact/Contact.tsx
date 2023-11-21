@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import ArrowIcon from '../../assets/componentSVG/arrow'
 import Header from './Header'
 import BoxContact from './BoxContact'
-import ButtonsPages from './ButtonsPages'
+import ButtonsPages from '../../components/ButtonsPages'
 import RightInfo from '../../layouts/RightInfo'
 
 const Contact = () => {

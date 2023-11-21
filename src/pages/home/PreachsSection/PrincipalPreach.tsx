@@ -1,9 +1,9 @@
 import { useNavigate } from 'react-router-dom'
 import Button from '../../../components/Button'
-import { type Preach } from '../../../types/types'
+import { type PreachType } from '../../../types/types'
 import { dateSeter } from '../../../utils/dateSeter'
 
-const PrincipalPreach = ({ title, pastor, date, content, image, id }: Preach) => {
+const PrincipalPreach = ({ title, pastor, date, content, image, id }: PreachType) => {
   const navigate = useNavigate()
   return (
     <div className='flex flex-wrap w-full lg:flex-nowrap items-center p-10 lg:p-24 max-w-[1440px]'>

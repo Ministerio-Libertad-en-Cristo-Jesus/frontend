@@ -3,7 +3,7 @@ import Button from './Button'
 
 const Buttons = ({ buttons }: ButtonsSidepanelProps) => {
   return (
-    <div>
+    <div className='pb-16'>
       {buttons.map((button, index) => (
         <Button svg={button.svg} name={button.name} rute={button.rute} key={index} />
       ))}

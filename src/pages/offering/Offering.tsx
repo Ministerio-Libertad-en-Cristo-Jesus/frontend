@@ -1,6 +1,6 @@
 import ArrowIcon from '../../assets/componentSVG/arrow'
 import RightInfo from '../../layouts/RightInfo'
-import ButtonsPages from '../contact/ButtonsPages'
+import ButtonsPages from '../../components/ButtonsPages'
 import BoxOffering from './BoxOffering'
 import HeaderOffering from './HeaderOffering'
 import { useEffect } from 'react'
