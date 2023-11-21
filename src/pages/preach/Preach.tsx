@@ -30,7 +30,6 @@ const Preach = () => {
               <ArrowIcon />
               <ContentPreach preachInfo1={preachInfo1} />
               <ButtonsPages />
-              <div className='h-[45px] sm:h-[96px]'></div>
               <BottonInfo />
             </div>
       }

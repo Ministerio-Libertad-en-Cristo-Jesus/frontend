@@ -3,6 +3,11 @@ export default {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      flex: {
+        3: '0 0 calc(33% - 30px)',
+        2: '0 0 calc(50% - 30px)',
+        100: '0 0 calc(100% - 30px)'
+      },
       colors: {
         blueI: '#14213d',
         whiteI: '#e5e5e5',

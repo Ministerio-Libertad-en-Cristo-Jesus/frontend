@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom'
-import { type Preach } from '../../../types/types'
+import { type PreachType } from '../../../types/types'
 
-const Slide = ({ title, content, image, id }: Preach) => {
+const Slide = ({ title, content, image, id }: PreachType) => {
   const navigate = useNavigate()
   return (
     <div className='flex w-full max-w-[1440px] relative z-[1] justify-center'>

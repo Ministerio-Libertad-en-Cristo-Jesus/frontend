@@ -1,8 +1,8 @@
 import { useNavigate } from 'react-router-dom'
-import { type Preach } from '../types/types'
+import { type PreachType } from '../types/types'
 import { dateSeter } from '../utils/dateSeter'
 
-const CardSmall = ({ title, pastor, content, date, image, id }: Preach) => {
+const CardSmall = ({ title, pastor, content, date, image, id }: PreachType) => {
   const navigate = useNavigate()
   return (
     <div

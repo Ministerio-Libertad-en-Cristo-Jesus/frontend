@@ -1,13 +1,13 @@
 import { useNavigate } from 'react-router-dom'
-import { type Preach } from '../../../types/types'
+import { type PreachType } from '../../../types/types'
 import { dateSeter } from '../../../utils/dateSeter'
 
-const Card = ({ title, pastor, content, date, image, id }: Preach) => {
+const Card = ({ title, pastor, content, date, image, id }: PreachType) => {
   const navigate = useNavigate()
   return (
     <div
     onClick={() => { navigate(`/preach/${id}`) }}
-    className='w-60 min-w-[15rem] lg:min-w-[20rem] lg:w-80 hover:bg-[#e1e1e1] rounded-t-xl rounded-b-xl hover:shadow-md lg:hover:shadow-xl hover:cursor-pointer transition-all duration-200'>
+    className='w-60 min-w-[15rem] lg:min-w-[20rem] lg:w-80 bg-[#d6d6d6] rounded-t-xl rounded-b-xl hover:shadow-md lg:hover:shadow-xl hover:cursor-pointer transition-all duration-200'>
       <img
       className=' w-60 min-w-[15rem] lg:min-w-[20rem] lg:w-80 rounded-t-xl h-36 lg:h-44 object-cover'
       src={image}
