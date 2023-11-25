@@ -23,6 +23,8 @@ const FormContact = () => {
     message: ''
   })
 
+  const serviceId = import.meta.env.VITE_REACT_APP_EMAILJS_SERVICE_ID
+  const templateContact = import.meta.env.VITE_REACT_APP_EMAILJS_TEMPLATE_CONTACT
   const [loading, setLoading] = useState(false)
   const [response, setResponse] = useState('')
   const [messageAl, setMessageAl] = useState('')
@@ -54,7 +56,7 @@ const FormContact = () => {
       setLoading(true)
       setResponse('')
 
-      emailjs.send('service_4n9dajf', 'template_u8xdkim', {
+      emailjs.send(serviceId, templateContact, {
         ...form,
         user_name: form.user_name.trim(),
         user_email: form.user_email.trim(),

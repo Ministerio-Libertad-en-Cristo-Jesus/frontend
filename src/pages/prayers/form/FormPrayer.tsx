@@ -39,6 +39,8 @@ const FormPrayer = () => {
     message: ''
   })
 
+  const serviceId = import.meta.env.VITE_REACT_APP_EMAILJS_SERVICE_ID
+  const templatePrayer = import.meta.env.VITE_REACT_APP_EMAILJS_TEMPLATE_PRAYER
   const [loading, setLoading] = useState(false)
   const [response, setResponse] = useState('')
   const [messageAl, setMessageAl] = useState('')
@@ -69,7 +71,7 @@ const FormPrayer = () => {
       setLoading(true)
       setResponse('')
 
-      emailjs.send('service_4n9dajf', 'template_5ydwsz9', {
+      emailjs.send(serviceId, templatePrayer, {
         ...form,
         user_name: form.user_name.trim(),
         user_email: form.user_email.trim(),
