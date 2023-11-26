@@ -5,7 +5,7 @@ import Button from '../../../components/Button'
 const OfferingSection = () => {
   const navigate = useNavigate()
   return (
-    <div className="flex justify-center w-full mb-10 lg:mb-24 bg-blueI">
+    <section id='offeringSect' className="flex justify-center w-full mb-10 lg:mb-24 bg-blueI">
       <div className='flex flex-col-reverse lg:flex-row justify-between items-center px-10 lg:px-24 max-w-[1440px]'>
         <div className='flex flex-col items-center'>
 
@@ -23,7 +23,7 @@ const OfferingSection = () => {
 
         <img className='lg:h-64' src={offeringImg} alt="Offering" />
       </div>
-    </div>
+    </section>
   )
 }
 

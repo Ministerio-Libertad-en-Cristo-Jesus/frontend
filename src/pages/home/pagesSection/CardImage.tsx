@@ -5,7 +5,7 @@ const CardImage = ({ title, row, image, link }: CardImageType) => {
   const navigate = useNavigate()
 
   return (
-    <div onClick={() => { navigate(link) }} className={`relative ${row} hover:cursor-pointer rounded-3xl hover:shadow-xl hover:translate-y-[-0.50rem] transition-all duration-300`}>
+    <article onClick={() => { navigate(link) }} className={`relative ${row} hover:cursor-pointer rounded-3xl hover:shadow-xl hover:translate-y-[-0.50rem] transition-all duration-300`}>
       <div className='w-full h-full absolute top-0 right-0 max-w-[1440px] rounded-3xl bg-gradient-to-t from-black'></div>
 
       <div className='absolute w-full bottom-2 sm:bottom-4 lg:bottom-8'>
@@ -17,7 +17,7 @@ const CardImage = ({ title, row, image, link }: CardImageType) => {
       src={image}
       alt='contact' />
 
-    </div>
+    </article>
   )
 }
 

@@ -4,7 +4,7 @@ import { type PreachType } from '../../../types/types'
 const Slide = ({ title, content, image, id }: PreachType) => {
   const navigate = useNavigate()
   return (
-    <div className='flex w-full max-w-[1440px] relative z-[1] justify-center'>
+    <article className='flex w-full max-w-[1440px] relative z-[1] justify-center'>
 
       <div className='w-full h-[600px] absolute top-0 right-0 max-w-[1440px] bg-gradient-to-t from-black'></div>
 
@@ -19,7 +19,7 @@ const Slide = ({ title, content, image, id }: PreachType) => {
       src={image}
       alt={title} />
 
-    </div>
+    </article>
   )
 }
 

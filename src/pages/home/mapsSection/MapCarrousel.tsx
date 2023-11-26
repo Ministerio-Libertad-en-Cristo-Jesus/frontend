@@ -4,7 +4,7 @@ import MapSlide from './MapSlide'
 
 const MapCarrousel = ({ whatSelected }: MapCarrouselType) => {
   return (
-    <div className={`flex px-10 lg:px-24 w-full overflow-hidden ${whatSelected.orlando ? 'justify-start' : 'justify-end'} transition-all duration-300`}>
+    <section className={`flex px-10 lg:px-24 w-full overflow-hidden ${whatSelected.orlando ? 'justify-start' : 'justify-end'} transition-all duration-300`}>
       {
         mapSlides.map((slide, index) => (
           <MapSlide
@@ -15,7 +15,7 @@ const MapCarrousel = ({ whatSelected }: MapCarrouselType) => {
           />
         ))
       }
-    </div>
+    </section>
   )
 }
 
