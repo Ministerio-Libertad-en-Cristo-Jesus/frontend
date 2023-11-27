@@ -15,7 +15,7 @@ const Slide = ({ title, content, image, id }: PreachType) => {
       </div>
 
       <img
-      className='h-[600px] w-full max-w-[1440px] object-cover'
+      className='h-[600px] w-screen max-w-[1440px] object-cover'
       src={image}
       alt={title} />
 

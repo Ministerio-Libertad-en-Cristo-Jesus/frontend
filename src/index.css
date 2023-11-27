@@ -51,10 +51,12 @@ body{
 
 .header-carrousel .swiper-button-prev {
   color: #e5e5e5;
+  margin-left: 15px;
 }
 
 .header-carrousel .swiper-button-next {
   color: #e5e5e5;
+  margin-right: 15px;
 }
 
 .header-carrousel .swiper-pagination .swiper-pagination-bullet {
@@ -65,10 +67,16 @@ body{
 
 .social-media .swiper-button-prev {
   color: #14213d;
+  margin-left: 15px;
 }
 
 .social-media .swiper-button-next {
   color: #14213d;
+  margin-right: 15px;
+}
+
+.social-media .swiper-pagination{
+  margin-top: -35px;
 }
 
 .social-media .swiper-pagination .swiper-pagination-bullet {

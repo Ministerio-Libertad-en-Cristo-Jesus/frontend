@@ -12,7 +12,7 @@ const Navbar = () => {
   const dispatch = useAppDispatch()
 
   return (
-    <nav className='flex fixed top-0 z-[40] w-full justify-center items-center px-28 h-20 bg-blueI'>
+    <nav className='flex fixed top-0 z-[40] w-screen justify-center items-center px-28 h-20 bg-blueI'>
 
       <List items={list1} listStyle={listStyles} itemStyle={linksStyles} />
 

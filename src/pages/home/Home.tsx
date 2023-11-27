@@ -17,14 +17,14 @@ const Home = () => {
   }, []) // El array vacío asegura que el efecto se ejecute solo una vez (en el montaje)
 
   return (
-    <div className='flex flex-col items-center justify-center mt-20'>
+    <main className='flex flex-col items-center justify-center mt-20'>
       <Carrousel />
       <PreachSection />
       <OfferingSection />
       <PagesSection />
       <MapSection />
       <SocialMediaSection />
-    </div>
+    </main>
   )
 }
 
