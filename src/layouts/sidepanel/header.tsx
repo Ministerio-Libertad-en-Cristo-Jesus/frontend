@@ -8,9 +8,9 @@ const HeaderSidePanel = () => {
   return (
     <header className='flex justify-between my-5 mx-5 pb-4 border-b border-b-blueI'>
       <p className=' font-noto font-bold text-2xl text-blueI'>Menú</p>
-      <div onClick={() => dispatch(OpenCloseSidePanel())}>
+      <button onClick={() => dispatch(OpenCloseSidePanel())}>
         <CloseIcon />
-      </div>
+      </button>
     </header>
   )
 }

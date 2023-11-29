@@ -18,7 +18,7 @@ const Carrousel = () => {
   // Obtiene un conjunto limitado de datos de predicaciones (solo los primeros 3)
   const preachs = preachings.slice(0, 3)
   return (
-    <header className='flex w-screen flex-col justify-center'>
+    <section id='carrouselPreach' className='flex w-screen flex-col justify-center'>
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={0} // Espacio entre las diapositivas
@@ -37,7 +37,7 @@ const Carrousel = () => {
         }
 
       </Swiper>
-    </header>
+    </section>
   )
 }
 

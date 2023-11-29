@@ -12,7 +12,7 @@ const Navbar = () => {
   const dispatch = useAppDispatch()
 
   return (
-    <nav className='flex fixed top-0 z-[40] w-screen justify-center items-center px-28 h-20 bg-blueI'>
+    <header className='flex fixed top-0 z-[40] w-screen justify-center items-center px-28 h-20 bg-blueI'>
 
       <List items={list1} listStyle={listStyles} itemStyle={linksStyles} />
 
@@ -22,13 +22,13 @@ const Navbar = () => {
 
       <List items={list2} listStyle={listStyles} itemStyle={linksStyles} />
 
-      <div
+      <button
       onClick={() => dispatch(OpenCloseSidePanel())}
       className='absolute right-8 lg:right-14 stroke-whiteI hover:stroke-yellow-500 transition-all duration-200 hover:cursor-pointer xl:hidden'>
         <MenuIcon />
-      </div>
+      </button>
 
-    </nav>
+    </header>
   )
 }
 
