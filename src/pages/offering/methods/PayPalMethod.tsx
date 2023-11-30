@@ -18,24 +18,19 @@ const PayPalMethod = () => {
   const [errorMessage, setErrorMessage] = useState('')
   const dispatch = useAppDispatch()
   const navigate = useNavigate()
-  const [description, setDescription] = useState(['', ''])
+  const [description, setDescription] = useState('')
   const options = ['Donación', 'Diezmo', 'Ofrenda']
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target
     setErrorMessage('')
     switch (name) {
       case 'typePay':
-        setDescription([value, description[1]])
-        setOfferingPaypal({
-          ...offeringPaypal,
-          description: [value, description[1]].join(': ')
-        })
+        setDescription(value)
         break
       case 'description':
-        setDescription([description[0], value])
         setOfferingPaypal({
           ...offeringPaypal,
-          description: [description[0], value].join(': ')
+          description: value
         })
         setErrors(validate({
           ...offeringPaypal,
@@ -64,7 +59,7 @@ const PayPalMethod = () => {
     } else if (description[0] === '') {
       setErrorMessage('Selecciona un tipo de pago*')
     } else {
-      dispatch(changeCheck({ amountCheck: offeringPaypal.amount, descriptionCheck: offeringPaypal.description }))
+      dispatch(changeCheck({ amountCheck: offeringPaypal.amount, descriptionCheck: offeringPaypal.description, payType: description }))
       navigate('/offering/checkoutpaypal')
     }
   }
@@ -75,10 +70,10 @@ const PayPalMethod = () => {
         <p className='font-noto text-sm sm:text-base text-blueI'>Llena todos los campos*</p>
       </div>
       <div className='flex flex-col sm:flex-row w-full gap-8'>
-        <Select options={options} placeholder='Tipo de pago' name='typePay' value={description[0]} handleChange={handleChange} />
+        <Select options={options} placeholder='Tipo de pago' name='typePay' value={description} handleChange={handleChange} />
         <Input name='amount' placeholder='Cantidad $' value={offeringPaypal.amount} min='1' onChange={handleChange} error={false} errorMessage={errors.amount} type='number' />
       </div>
-      <Input name='description' placeholder='Descripción' value={description[1]} onChange={handleChange} error={false} errorMessage={errors.description} type='text' />
+      <Input name='description' placeholder='Descripción' value={offeringPaypal.description} onChange={handleChange} error={false} errorMessage={errors.description} type='text' />
       <p className={`font-not text-sm text-red-800 text-center ${errorMessage === '' ? 'hidden' : ''}`}>{errorMessage}</p>
       <button
       onClick={handleClick}

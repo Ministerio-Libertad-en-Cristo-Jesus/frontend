@@ -6,7 +6,7 @@ import { dateSeter } from '../../../utils/dateSeter'
 const PrincipalPreach = ({ title, pastor, date, content, image, id }: PreachType) => {
   const navigate = useNavigate()
   return (
-    <article className='flex flex-wrap w-full lg:flex-nowrap items-center p-10 lg:p-24 max-w-[1440px]'>
+    <article className='flex flex-wrap p-10 lg:p-24 lg:flex-nowrap items-center  max-w-[1440px]'>
 
       <img
       className=' lg:w-[420px] h-[370px] lg:h-[420px] mr-12 object-cover rounded-xl'

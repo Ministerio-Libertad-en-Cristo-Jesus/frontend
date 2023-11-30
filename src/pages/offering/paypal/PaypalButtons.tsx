@@ -19,9 +19,9 @@ const PaypalButtonsCont = (props: Props) => {
     }
   }, [])
   return (
-    <div className=' z-[1]'>
+    <div className='w-full z-[1]'>
         <PayPalButtons
-        style={{ color: 'blue', label: 'donate' }}
+        style={{ color: 'blue', label: 'donate', disableMaxWidth: true }}
         createOrder={async (data, actions) => {
           return await actions.order.create({
             purchase_units: [
@@ -80,7 +80,7 @@ const PaypalButtonsCont = (props: Props) => {
             confirmButtonColor: '#14213d'
           }).then((result) => {
             if (result.isConfirmed) {
-              dispatch(changeCheck({ descriptionCheck: '', amountCheck: '1' }))
+              dispatch(changeCheck({ descriptionCheck: '', amountCheck: '1', payType: '' }))
               navigate('/offering')
             }
           }).catch((error) => {

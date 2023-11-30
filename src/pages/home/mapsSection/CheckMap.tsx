@@ -17,11 +17,11 @@ const CheckMap = ({ isSelected, changeMap, title, direction, name, name2, whatSe
   }
 
   return (
-    <div onClick={handleClick} className={`flex items-center max-w-[140px] lg:max-w-[200px] flex-col border-2 ${isSelected ? 'border-whiteI' : 'border-blueI'} hover:cursor-pointer rounded-lg p-1 lg:p-3 transition-all duration-300`}>
+    <button onClick={handleClick} className={`flex items-center max-w-[140px] lg:max-w-[200px] flex-col border-2 ${isSelected ? 'border-whiteI' : 'border-blueI'} hover:cursor-pointer rounded-lg p-1 lg:p-3 transition-all duration-300`}>
       <MarkerIcon />
       <h3 className='font-noto text-center font-bold lg:text-lg text-whiteI'>{title}</h3>
       <p id='parrafoMap' className='font-noto text-center text-sm lg:text-base font-light text-whiteI'>{direction}</p>
-    </div>
+    </button>
   )
 }
 
