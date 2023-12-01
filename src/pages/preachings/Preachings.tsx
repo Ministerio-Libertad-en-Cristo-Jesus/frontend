@@ -15,14 +15,16 @@ const Preachings = () => {
     window.scrollTo(0, 0)
   }, [location.pathname])
   return (
-    <div className="flex flex-col w-full items-center justify-center px-10 lg:px-24 mt-32 lg:mt-40 mb-10 lg:mb-24">
+    <main className="flex flex-col w-full items-center justify-center px-10 lg:px-24 mt-32 lg:mt-40 mb-10 lg:mb-24">
       <div className='flex flex-col w-full items-center justify-center max-w-[1440px]'>
-        <h1 className='font-noto font-black text-center text-blueI text-3xl lg:text-5xl mt-10'>Enseñanzas</h1>
-        <p className='font-noto font-normal text-blueI text-center mb-16 text-xl mt-1'>Nuestras últimas enseñanzas</p>
+        <header>
+          <h1 className='font-noto font-black text-center text-blueI text-3xl lg:text-5xl mt-10'>Enseñanzas</h1>
+          <p className='font-noto font-normal text-blueI text-center mb-16 text-xl mt-1'>Nuestras últimas enseñanzas</p>
+        </header>
         <Cards preachings={preachings} />
         <Pagination page={page} maxPage={maxPage} />
       </div>
-    </div>
+    </main>
   )
 }
 

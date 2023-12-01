@@ -10,7 +10,7 @@ const Prayers = () => {
     window.scrollTo(0, 0)
   }, [])
   return (
-    <div className='w-full flex flex-col items-center mt-20'>
+    <main className='w-full flex flex-col items-center mt-20'>
       <HeaderPrayer />
       <ArrowIcon />
       <div className='w-full flex flex-col items-center px-10 lg:px-24 max-w-[1440px]'>
@@ -20,7 +20,7 @@ const Prayers = () => {
           <RightInfo />
         </div>
       </div>
-    </div>
+    </main>
   )
 }
 

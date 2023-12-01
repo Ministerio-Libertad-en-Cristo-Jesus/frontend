@@ -21,7 +21,7 @@ const Preach = () => {
     window.scrollTo(0, 0)
   }, [location.pathname])
   return (
-    <div className="flex flex-col items-center w-full mt-20">
+    <main className="flex flex-col items-center w-full mt-20">
       {
         preachFind === undefined
           ? <PreachNoExist />
@@ -33,7 +33,7 @@ const Preach = () => {
               <BottonInfo />
             </div>
       }
-    </div>
+    </main>
   )
 }
 

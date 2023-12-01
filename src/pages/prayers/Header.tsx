@@ -2,7 +2,7 @@ import headerImg from '../../assets/image/prayerHeader.jpg'
 
 const HeaderPrayer = () => {
   return (
-    <header className='flex relative justify-center'>
+    <section className='flex relative justify-center'>
 
       <div className='w-full h-[600px] absolute top-0 right-0 max-w-[1440px] bg-gradient-to-t from-black'></div>
 
@@ -21,7 +21,7 @@ const HeaderPrayer = () => {
       alt="headerImage"
       />
 
-    </header>
+    </section>
   )
 }
 

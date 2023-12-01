@@ -5,7 +5,7 @@ import { dateSeter } from '../../utils/dateSeter'
 const Card = ({ title, pastor, content, date, image, id }: PreachType) => {
   const navigate = useNavigate()
   return (
-    <div
+    <article
     onClick={() => { navigate(`/preach/${id}`) }}
     className='flex-2 sm:flex-3 min-w-[268px] bg-[#d6d6d6] rounded-t-xl rounded-b-xl hover:shadow-md lg:hover:shadow-xl hover:cursor-pointer transition-all duration-200'>
       <img
@@ -19,7 +19,7 @@ const Card = ({ title, pastor, content, date, image, id }: PreachType) => {
         <p className='font-noto text-gray-600 mt-3 text-xs lg:text-sm'>{dateSeter(date)}</p>
       </div>
 
-    </div>
+    </article>
   )
 }
 

@@ -4,7 +4,7 @@ interface Props {
 
 const HeaderPreach = ({ headerImg }: Props) => {
   return (
-    <header className='flex relative justify-center'>
+    <section className='flex relative justify-center'>
 
       <div className='w-full h-[450px] absolute top-0 right-0 max-w-[1440px] bg-gradient-to-t from-black'></div>
 
@@ -14,7 +14,7 @@ const HeaderPreach = ({ headerImg }: Props) => {
       alt="headerImage"
       />
 
-    </header>
+    </section>
   )
 }
 

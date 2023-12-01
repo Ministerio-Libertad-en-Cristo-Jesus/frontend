@@ -3,7 +3,7 @@ import { buttonsContactInfo } from '../../utils/buttonsContactinfo'
 
 const Buttons = () => {
   return (
-    <div className="flex flex-col items-center gap-5 sm:gap-8 w-full">
+    <nav className="flex flex-col items-center gap-5 sm:gap-8 w-full">
       {
         buttonsContactInfo.map((button, index) => (
           <ButtonContact
@@ -15,7 +15,7 @@ const Buttons = () => {
           />
         ))
       }
-    </div>
+    </nav>
   )
 }
 
