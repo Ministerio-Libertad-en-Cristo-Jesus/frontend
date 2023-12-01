@@ -19,7 +19,7 @@ const Preachings = lazy(() => import('./pages/preachings/Preachings'))
 const Contact = lazy(() => import('./pages/contact/Contact'))
 const CreatePreach = lazy(() => import('./pages/CreatePreach'))
 const Preach = lazy(() => import('./pages/preach/Preach'))
-const CheckOutPaypal = lazy(() => import('./pages/offering/CheckOutPaypal'))
+const CheckOutPaypal = lazy(() => import('./pages/offering/checkoutpaypal/CheckOutPaypal'))
 
 // Función principal del componente App
 function App () {
